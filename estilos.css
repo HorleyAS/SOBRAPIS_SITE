@@ -1,0 +1,591 @@
+    /* === ESTILOS GERAIS === */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5fcef;
+        margin: 0 auto;
+        padding: 0;
+      }
+    /*PAGINA INTEIRA*/
+      h1 {
+        color: #154d0d;
+        font-size: 35px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-left: 0px;
+        font-family: "Anton", sans-serif;
+    
+      }
+    
+      h2 {
+        margin: 10px 0 5px;
+        font-size: 20px;
+        margin-left: 0px;
+      }
+    
+      p, ul {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.5;
+        margin: 10px 0 0;
+      }
+    
+      .BLOCO2{
+        max-width: 1200px;
+        margin: 0 auto;
+    
+      }
+    
+      .BLOCO3{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    
+      .BLOCO4{
+        margin-left: 0%;
+        width: 1200px;
+      }
+    
+      @media (max-width: 1200px) {
+        .BLOCO2{
+        margin-left: 5%;
+        margin-right: 5%;
+    
+      }
+    
+      .BLOCO3{
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .BLOCO4{
+        margin: 0%;
+        width: 100%;
+      }
+      }
+    /*PAGINA INTEIRA*/
+    
+      /*HEADER SOBRAPIS*/
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('media/SOPRAPIS SITE.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-height: 800px;
+          }
+    
+          .overlay {
+            background-color: rgba(0, 51, 0, 0.4);
+            color: white;
+            padding: 35px 25px;
+            max-width: 300px;
+            
+          }
+    
+          .overlay h1 {
+            margin-left: 0%;
+            color: #f5fcef;
+            font-size: 35px;
+            margin-bottom: 20px;
+                    
+          }
+    
+          .overlay p {
+            color: #f5fcef;
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+          }
+    
+          .btn {
+            background-color: #b8e986;
+            color: #003300;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          }
+    
+          .btn:hover {
+            background-color: #a0d96c;
+          }
+    
+          @media (max-width: 768px) {
+            .hero{
+              max-height: 600px;
+            }
+            .overlay {
+              margin: 20px;
+              padding: 25px 15px;
+    
+            }
+    
+            .overlay h1 {
+              font-size: 32px;
+            }
+    
+            .overlay p {
+              font-size: 18px;
+            }
+          }
+      /*HEADER SOBRAPIS*/
+    
+      /* === CONHEÇA O NOSSO TRABALHO === */
+      .carousel-container,
+        .relatodemembros {
+          display: flex;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          gap: 20px;
+          padding: 20px;
+          margin-left: 5PX;
+      
+        }
+        .nosso_trabalho {
+          display: flex;
+          flex: 0 0 100%;
+          justify-content: center;
+          gap: 20px;
+          scroll-snap-align: start;
+        }
+    
+        .nosso_trabalho h2{
+          color: #154d0d;
+          font-size: 28px;
+          font-weight: 800;
+          text-transform: uppercase;
+          margin: 10px;
+          font-family: "Anton", sans-serif;;
+    
+        }
+    
+        .nosso_trabalho p{
+          font-size: 15px;
+          font-weight: 600;
+          margin: 10px;
+          letter-spacing: -1px;
+        }
+    
+        .nosso_trabalho li{
+          font-size: 15px;
+          font-weight: 600;
+          margin: 10px;
+          letter-spacing: -1px;
+        }
+    
+        .scrollbar::-webkit-scrollbar {
+          height: 8px;
+        }
+    
+        .scrollbar::-webkit-scrollbar-thumb {
+          background: #ccc;
+          border-radius: 4px;
+        }
+    
+      /* === CARDS === */
+     
+    
+      .card {
+        background-color: #e6e6e6;
+        width: 300px;
+        height: 100%;
+        border-radius: 3px;
+    
+        
+      }
+      .card img{
+        width: 94%;
+        height: 40%;
+        object-fit: cover;
+        border-radius: 3px;
+        margin: 3%;
+      }
+    
+      .card ul {
+        padding-left: 20px;
+      }
+    
+      /* === QUEM SOMOS === */
+        .quem-somos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: #204F0C; /* Verde escuro */
+            color: white;
+            padding: 40px 5%;
+            flex-wrap: wrap;
+          }
+    
+          .texto {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+          }
+    
+          .texto h1 {
+            color: #f5fcef;
+            font-size: 35px;
+            font-weight: 800;
+            text-transform: uppercase;
+          }
+    
+          .texto p {
+            color: #f5fcef;
+            font-size: 18px;
+            font-weight: 200;
+            letter-spacing: -1px;
+          }
+    
+          .imagem {
+            flex: 1;
+            min-width: 100px;
+            max-width: 400px;
+          }
+    
+          .imagem img {
+            max-width: 100%;
+            height: auto;
+          }
+    
+          @media (max-width: 600px) {
+          .quem-somos {
+            padding: 40px 20px;
+          }
+           
+          
+          .texto h1 {
+            font-size: 28px;
+            font-weight: 800;
+          }
+    
+          .texto p {
+            font-size: 15px;
+          }
+    
+          }
+      /* === QUEM SOMOS === */
+    
+      /* === BLOCO DE IMPACTO === */
+          .impact-section {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas */
+          gap: 30px;
+          margin: 30px auto;
+          max-width: 1000px;              /* ⬅ define uma largura máxima */
+          padding: 0 20px;    
+        }
+    
+        .impact-card {
+          padding: 20px;
+          border-radius: 8px;
+        }
+    
+        .impact-card strong {
+          color: #ff7c4d;
+          font-size: 55px;
+          display: block;
+          line-height: 1;
+          font-weight: 800;
+          font-family: "Anton", sans-serif;
+          margin-bottom: 30px;
+    
+        }
+        .impact-card .plus {
+          color: #ff7c4d;
+          font-size: 85px;
+          display: block;
+          line-height: 1;
+          font-weight: 800;
+          margin-left: 0px;
+          
+        }
+    
+    
+        .impact-card h3 {
+          color: #011936;
+          margin: 5px 0 0;
+          font-weight: 800;
+          transform: scaleY(1.2);
+        }
+    
+        .impact-card p {
+          color: #275912;
+          font-size: 14px;
+          font-weight: 700;
+          margin: 5px 0 0;
+        }
+    
+        /* Mobile: 1 coluna (1x4) */
+        @media (max-width: 550px) {
+          .impact-section {
+            grid-template-columns: 1fr;
+          }
+        }
+    /* === BLOCO DE IMPACTO === */
+    
+    /* === NOSSA HISTÓRIA === */
+        .banner {
+          position: relative;
+          width: 100%;
+          height: 1200px;
+          background-image: url('media/NOSSA_HISTORIA.jpg'); /* Substitua pela imagem real */
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .card-banner {
+          background-color: rgba(31, 69, 18, 0.9);
+          color: #f5fcef;
+          padding: 40px;
+          width: 70%;
+          max-height: 90%;
+          max-width: 600px;
+          min-width: 250px;
+        }
+    
+        .card-banner h2 {
+          margin-top: 10px;
+          font-size: 60px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+          font-family: "Anton", sans-serif;
+        }
+    
+        .card-banner p {
+          font-size: 20px;
+          line-height: 1.7;
+          margin-bottom: 15px;
+          color: #f5fcef;
+    
+        }
+    
+        @media (max-width: 768px) {
+    
+          .card-banner {
+            padding: 20px;
+            max-width: 90%;
+          }
+    
+          .card-banner h2 {
+            font-size: 34px;
+          }
+    
+          .card-banner p {
+            font-size: 15px;
+          }
+        }
+    /* === NOSSA HISTÓRIA === */
+    
+    /* === RELATOS DE MEMBROS === */
+    .depoimentos {
+      background-color: #f5faef;
+      padding: 60px 30px;
+      font-family: sans-serif;
+    }
+    
+    .depoimentos h2 {
+      font-family: "Anton", sans-serif;
+      color: #2e5d1e;
+      font-size: 28px;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+    
+    .cards-container2 {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
+    }
+    
+    .card2 {
+      flex: 0 0 auto;
+      width: 320px;
+      background-color: #001c41;
+      color: white;
+      border-radius: 6px;
+      padding: 20px;
+      box-sizing: border-box;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content:end;
+    }
+    
+    .card2 p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #f5fcef;
+    
+    }
+    
+    .card2 img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      margin-top: auto;
+    
+    }
+    
+    .card2 span {
+      font-size: 14px;
+      color: #f5fcef;
+
+    }
+    
+    .card2 span em {
+      font-style: italic;
+    }
+    
+    .orange {
+      background-color: #ff7c4d;
+    }
+    
+    /* Opcional: esconder barra de rolagem no WebKit (Chrome/Safari) */
+    .cards-container::-webkit-scrollbar {
+      display: none;
+    }
+    .cards-container {
+      -ms-overflow-style: none; /* IE e Edge */
+      scrollbar-width: none;    /* Firefox */
+    }
+    /* === RELATOS DE MEMBROS === */
+    
+    /* === NOSSA MISSÃO === */
+      .nossamissao {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #204F0C; /* Verde escuro */
+            color: white;
+            padding: 40px 5%;
+            flex-wrap: wrap;
+          }
+    
+          .texto2 {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+          }
+    
+          .texto2 h1 {
+            color: #f5fcef;
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin: 0px;
+    
+          }
+    
+          .texto2 p {
+            color: #f5fcef;
+            font-size: 15px;
+            font-weight: 200;
+            letter-spacing: -1px;
+          }
+    
+          .imagem2 {
+            flex: 1;
+            text-align: center;
+            min-width: 100px;
+            max-width: 450px;
+          }
+    
+          .imagem2 img {
+            max-width: 100%;
+            height: auto;
+          }
+    
+          @media (max-width: 600px) {
+            .nossamissao {
+              padding: 40px 20px;
+            }
+            .imagem2 img {
+              max-width: 100%;
+              max-height: 300px ;
+          }
+            .texto2 h1 {
+            font-size: 28px;
+            font-weight: 800;
+          }
+    
+          .texto2 p {
+            font-size: 14px;
+          }
+    
+          }
+      /* === NOSSA MISSÃO === */
+    
+    /* === CONTATO === */
+      .contact-container {
+        padding: 30px 20px;
+      }
+    
+      .contact-title {
+        color: #154d0d;
+        font-size: 35px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-left: 0px;
+        font-family: "Anton", sans-serif;
+      }
+    
+      .contact-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px 20px;
+      }
+    
+      .contact-item {
+        display: flex;
+        align-items: center;
+      }
+    
+      .contact-item img {
+        width: 20px;
+        margin-right: 5px;
+      }
+    
+      .contact-item a {
+        color: #275912;
+        text-decoration: none;
+      }
+    
+      .contact-item a:hover {
+        color: #275912;
+        text-decoration: underline;
+      }
+    
+    
+      /* === RODAPÉ === */
+      .bottom-banner {
+        background-color: #275912;
+        color: #fc895e;
+        text-align: center;
+        padding: 15px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24PX;
+        font-family: "Anton", sans-serif;
+    
+      }
+    
+      
