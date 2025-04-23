@@ -414,8 +414,11 @@
       overflow-x: auto;
       gap: 20px;
       padding-bottom: 10px;
-        scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
+      pointer-events: none;        
+      overflow-x: hidden;        
+      touch-action: none; 
     }
     
     .card2 {
@@ -462,7 +465,10 @@
     .orange {
       background-color: #ff7c4d;
     }
-    
+    @media (min-width: 1200px) {
+      .card2 {
+        margin-left:10% ;
+      }
     /* Opcional: esconder barra de rolagem no WebKit (Chrome/Safari) */
     .cards-container::-webkit-scrollbar {
       display: none;
