@@ -469,6 +469,7 @@
       .card2 {
         margin-left:10% ;
       }
+    }
     /* Opcional: esconder barra de rolagem no WebKit (Chrome/Safari) */
     .cards-container::-webkit-scrollbar {
       display: none;
