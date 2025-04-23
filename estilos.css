@@ -433,6 +433,8 @@
       display: flex;
       flex-direction: column;
       justify-content:end;
+      margin-left:10% ;
+
     }
     
     .card2 p {
@@ -465,9 +467,9 @@
     .orange {
       background-color: #ff7c4d;
     }
-    @media (min-width: 1200px) {
+    @media (max-width: 1000px) {
       .card2 {
-        margin-left:10% ;
+        margin-left:0% ;
       }
     }
     /* Opcional: esconder barra de rolagem no WebKit (Chrome/Safari) */
