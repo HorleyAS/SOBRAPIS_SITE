@@ -568,14 +568,20 @@
     
       .contact-item a {
         color: #275912;
-        text-decoration: none;
+        font-size: 26px;
+        text-decoration: none;      }
       }
-    
       .contact-item a:hover {
         color: #275912;
         text-decoration: underline;
       }
-    
+    @media (max-width: 600px) {
+        .contact-item a {
+          color: #275912;
+          font-size: 15px;
+        }
+      }
+
     
       /* === RODAPÉ === */
       .bottom-banner {
