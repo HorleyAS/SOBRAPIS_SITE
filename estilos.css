@@ -59,6 +59,8 @@
       .BLOCO3{
         margin-left: 5%;
         margin-right: 5%;
+        overflow-x: auto;
+
       }
       .BLOCO4{
         margin: 0%;
