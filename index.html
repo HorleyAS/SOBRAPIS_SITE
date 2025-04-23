@@ -211,7 +211,23 @@
   
     setInterval(scrollToNextCard, 2000); // muda de card a cada 3 segundos
   </script>
-  
+  <script>
+  const container2 = document.querySelector('.cards-container2');
+  let scrollPosition = 0;
+
+  function scrollContinuously() {
+    scrollPosition += 1; // controla a velocidade (pode ajustar)
+    if (scrollPosition >= container2.scrollWidth - container2.clientWidth) {
+      scrollPosition = 0; // reinicia quando chega no fim
+    }
+    container2.scrollTo({
+      left: scrollPosition,
+      behavior: 'auto' // sem 'smooth' aqui pra não travar o fluxo
+    });
+  }
+
+  setInterval(scrollContinuously, 20); // quanto menor, mais suave
+</script>
 </body>
 
 </html>
