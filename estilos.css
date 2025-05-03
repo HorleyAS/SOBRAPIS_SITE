@@ -1,611 +1,707 @@
     /* === ESTILOS GERAIS === */
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f5fcef;
-        margin: 0 auto;
-        padding: 0;
-      }
-    /*PAGINA INTEIRA*/
-      h1 {
-        color: #154d0d;
-        font-size: 35px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-left: 0px;
-        font-family: "Anton", sans-serif;
-    
-      }
-    
-      h2 {
-        margin: 10px 0 5px;
-        font-size: 20px;
-        margin-left: 0px;
-      }
-    
-      p, ul {
-        font-size: 14px;
-        color: #333;
-        line-height: 1.5;
-        margin: 10px 0 0;
-      }
-    
+      font-family: Arial, sans-serif;
+      background-color: #f5fcef;
+      margin: 0 auto;
+      padding: 0;
+
+    }
+  /*PAGINA INTEIRA*/
+    h1 {
+      color: #154d0d;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 0px;
+      font-family: "Anton", sans-serif;
+  
+    }
+  
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+      margin-left: 0px;
+    }
+  
+    p, ul {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.5;
+      margin: 10px 0 0;
+    }
+  
+    .BLOCO2{
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #;
+  
+    }
+  
+    .BLOCO3{
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      overflow: hidden;
+           /* permite rolar */
+      scrollbar-width: none;  
+    }
+  
+    .BLOCO4{
+      margin-left: 0%;
+      width: 1200px;
+    }
+  
+    @media (max-width: 1200px) {
       .BLOCO2{
-        max-width: 1200px;
-        margin: 0 auto;
+      margin-left: 5%;
+      margin-right: 5%;
+  
+    }
+  
+    .BLOCO3{
+      margin-left: 5%;
+      margin-right: 5%;
+      overflow-x: auto;
+
+    }
+    .BLOCO4{
+      margin: 0%;
+      width: 100%;
+    }
+    }
+  /*PAGINA INTEIRA*/
+  
+    /*HEADER SOBRAPIS*/
+      .hero {
+          position: relative;
+          width: 100%;
+          height: 100vh;
+          background: url('media/SOPRAPIS SITE.jpg') no-repeat center center;
+          background-size: cover;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          max-height: 800px;
+        }
+  
+        .overlay {
+          background-color: rgba(0, 51, 0, 0.4);
+          color: white;
+          padding: 35px 25px;
+          max-width: 300px;
+          
+        }
+  
+        .overlay h1 {
+          margin-left: 0%;
+          color: #f5fcef;
+          font-size: 35px;
+          margin-bottom: 20px;
+                  
+        }
+  
+        .overlay p {
+          color: #f5fcef;
+          font-size: 20px;
+          line-height: 1.5;
+          margin-bottom: 30px;
+        }
+  
+        .botoes-header {
+          display: block;
+          gap: 10px;
+        }
+        .btn {
+          background-color: #b8e986;
+          color: #003300;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 25px;
+          font-weight: 800;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          text-decoration: none;
+          font-size: 14px;
+
+        }
+  
+        .btn:hover {
+          background-color: #76ad42;
+        }
+        .PARCEIRO-btn{
+          background-color: #073d07;
+          color: #ebe2e2;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 25px;
+          font-weight: 800;
+          text-transform: uppercase;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          text-decoration: none;
+          font-size: 14px;
     
-      }
-    
-      .BLOCO3{
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-    
-      .BLOCO4{
-        margin-left: 0%;
-        width: 1200px;
-      }
-    
-      @media (max-width: 1200px) {
-        .BLOCO2{
-        margin-left: 5%;
-        margin-right: 5%;
-    
-      }
-    
-      .BLOCO3{
-        margin-left: 5%;
-        margin-right: 5%;
-        overflow-x: auto;
+        }
+        .PARCEIRO-btn:hover {
+          background-color: #315e08;
+        }
+  
+        @media (max-width: 768px) {
+          .hero{
+            max-height: 600px;
+          }
+          .overlay {
+            margin: 20px;
+            padding: 25px 15px;
+  
+          }
+          .botoes-header {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: flex-start;
+          }
+          
+       
+          }
+          .overlay h1 {
+            font-size: 32px;
+          }
+  
+          .overlay p {
+            font-size: 18px;
+          }
+
+         
+    /*HEADER SOBRAPIS*/
+  
+   
+
+    /* === CONHEÇA O NOSSO TRABALHO === */
+    .carousel_nossotrabalho-container_nossotrabalho {
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+      padding-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+
+    .carousel_nossotrabalho-button {
+      background-color: #011936;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      border-radius: 15px;
+    }
+
+    .carousel_nossotrabalho {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      max-height: 800px;
+    }
+
+    .carousel_nossotrabalho-track {
+      display: flex;
+      transition: transform 0.3s ease;
+    }
+
+    .carousel_nossotrabalho-card {
+      min-width: calc(100% / 3);
+      padding: 5px;
+      background-color: #e6e6e6;
+      margin: 5px;
+      padding-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .carousel_nossotrabalho-card img{
+      width: 94%;
+      height: 40%;
+      object-fit: cover;
+      border-radius: 3px;
+      margin: 3%;
+    }
+    .carousel_nossotrabalho-card h2{
+        color: #154d0d;
+        font-size: 28px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 10px;  
+        font-family: "Anton", sans-serif;
 
       }
-      .BLOCO4{
-        margin: 0%;
-        width: 100%;
+    .carousel_nossotrabalho-card p, li{
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        margin: 10px;
+        font-family: "Anton", sans-serif;
+
       }
+
+    /* Mobile: 1 card por vez */
+    @media (max-width: 850px) {
+      .carousel_nossotrabalho-card {
+        min-width: 80%;
+        height: 550px;
       }
-    /*PAGINA INTEIRA*/
-    
-      /*HEADER SOBRAPIS*/
-        .hero {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            background: url('media/SOPRAPIS SITE.jpg') no-repeat center center;
-            background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            max-height: 800px;
-          }
-    
-          .overlay {
-            background-color: rgba(0, 51, 0, 0.4);
-            color: white;
-            padding: 35px 25px;
-            max-width: 300px;
-            
-          }
-    
-          .overlay h1 {
-            margin-left: 0%;
-            color: #f5fcef;
-            font-size: 35px;
-            margin-bottom: 20px;
-                    
-          }
-    
-          .overlay p {
-            color: #f5fcef;
-            font-size: 20px;
-            line-height: 1.5;
-            margin-bottom: 30px;
-          }
-    
-          .btn {
-            background-color: #b8e986;
-            color: #003300;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-          }
-    
-          .btn:hover {
-            background-color: #a0d96c;
-          }
-    
-          @media (max-width: 768px) {
-            .hero{
-              max-height: 600px;
-            }
-            .overlay {
-              margin: 20px;
-              padding: 25px 15px;
-    
-            }
-    
-            .overlay h1 {
-              font-size: 32px;
-            }
-    
-            .overlay p {
-              font-size: 18px;
-            }
-          }
-      /*HEADER SOBRAPIS*/
-    
-      /* === CONHEÇA O NOSSO TRABALHO === */
-      .carousel-container,
-        .relatodemembros {
+
+      .carousel_nossotrabalho-button {
+      padding: 10px 10px;
+      font-size: 10px;
+    }
+
+    .carousel_nossotrabalho-container_nossotrabalho {
+      gap: 5px;
+    }
+
+    .carousel_nossotrabalho-card p, li{
+        font-size: 15px; 
+      }
+
+    }
+
+    @media (max-width: 550px) {
+      .carousel_nossotrabalho-card {
+        min-width: 100%;
+        height: 500px;
+      }
+
+      .carousel_nossotrabalho-button {
+      padding: 10px 5px;
+      font-size: 10px;
+    }
+
+    .carousel_nossotrabalho-container_nossotrabalho {
+      gap: 5px;
+    }
+
+    .carousel_nossotrabalho-card h2{
+        font-size: 24px; 
+      }
+    .carousel_nossotrabalho-card p, li{
+        font-size: 14px; 
+      }
+
+    }
+  
+    /* === QUEM SOMOS === */
+      .quem-somos {
           display: flex;
-          overflow-x: auto;
-          scroll-snap-type: x mandatory;
-          gap: 20px;
-          padding: 20px;
-          margin-left: 5PX;
-      
-        }
-        .nosso_trabalho {
-          display: flex;
-          flex: 0 0 100%;
+          flex-direction: row;
+          align-items: center;
           justify-content: center;
-          gap: 20px;
-          scroll-snap-align: start;
+          background-color: #204F0C; /* Verde escuro */
+          color: white;
+          padding: 40px 5%;
+          flex-wrap: wrap;
         }
+  
+        .texto {
+          flex: 1;
+          min-width: 300px;
+          max-width: 600px;
+        }
+  
+        .texto h1 {
+          color: #f5fcef;
+          font-size: 35px;
+          font-weight: 800;
+          text-transform: uppercase;
+        }
+  
+        .texto p {
+          color: #f5fcef;
+          font-size: 18px;
+          font-weight: 200;
+          letter-spacing: -1px;
+        }
+  
+        .imagem {
+          flex: 1;
+          min-width: 100px;
+          max-width: 400px;
+        }
+  
+        .imagem img {
+          max-width: 100%;
+          height: auto;
+        }
+  
+        @media (max-width: 600px) {
+        .quem-somos {
+          padding: 40px 20px;
+        }
+         
+        
+        .texto h1 {
+          font-size: 28px;
+          font-weight: 800;
+        }
+  
+        .texto p {
+          font-size: 15px;
+        }
+  
+        }
+    /* === QUEM SOMOS === */
+  
+    /* === BLOCO DE IMPACTO === */
+        .impact-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas */
+        gap: 30px;
+        margin: 30px auto;
+        max-width: 1000px;              /* ⬅ define uma largura máxima */
+        padding: 0 20px;    
+      }
+  
+      .impact-card {
+        padding: 20px;
+        border-radius: 8px;
+      }
+  
+      .impact-card strong {
+        color: #ff7c4d;
+        font-size: 55px;
+        display: block;
+        line-height: 1;
+        font-weight: 800;
+        font-family: "Anton", sans-serif;
+        margin-bottom: 30px;
+  
+      }
+      .impact-card .plus {
+        color: #ff7c4d;
+        font-size: 85px;
+        display: block;
+        line-height: 1;
+        font-weight: 800;
+        margin-left: 0px;
+        
+      }
+  
+  
+      .impact-card h3 {
+        color: #011936;
+        margin: 5px 0 0;
+        font-weight: 800;
+        transform: scaleY(1.2);
+      }
+  
+      .impact-card p {
+        color: #275912;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 5px 0 0;
+      }
+  
+      /* Mobile: 1 coluna (1x4) */
+      @media (max-width: 550px) {
+        .impact-section {
+          grid-template-columns: 1fr;
+        }
+      }
+  /* === BLOCO DE IMPACTO === */
+  
+  /* === NOSSA HISTÓRIA === */
+      .banner {
+        position: relative;
+        width: 100%;
+        height: 1200px;
+        background-image: url('media/NOSSA_HISTORIA.jpg'); /* Substitua pela imagem real */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      .card-banner {
+        background-color: rgba(31, 69, 18, 0.9);
+        color: #f5fcef;
+        padding: 40px;
+        width: 70%;
+        max-height: 90%;
+        max-width: 600px;
+        min-width: 250px;
+      }
+  
+      .card-banner h2 {
+        margin-top: 10px;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-family: "Anton", sans-serif;
+      }
+  
+      .card-banner p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        color: #f5fcef;
+  
+      }
+  
+      @media (max-width: 768px) {
+  
+        .card-banner {
+          padding: 20px;
+          max-width: 90%;
+        }
+  
+        .card-banner h2 {
+          font-size: 34px;
+        }
+  
+        .card-banner p {
+          font-size: 15px;
+        }
+      }
+  /* === NOSSA HISTÓRIA === */
+  
+  /* === RELATOS DE MEMBROS === */
+  .carousel_alt-container {
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+
+  }
+
+  .carousel_alt-button {
+    display: none;
+  }
+
+  .carousel_alt {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+  }
+
+  .carousel_alt-track {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+
+  .carousel_alt-card {
+    min-width: calc(95% / 3);
+    background-color: #001c41;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .carousel_alt-card img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 4px;
+    margin-top: auto;
+  }
+
+  .carousel_alt-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f5fcef;
+  }
+
+  .carousel_alt-card span {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #f5fcef;
+  }
+
+
+
+  @media (max-width: 650px) {
+    .carousel_alt-card {
+      min-width: 100%;
+      max-height: 600px;
+    }
     
-        .nosso_trabalho h2{
-          color: #154d0d;
+  .carousel_alt-button {
+    background-color: #ff7c4d;
+    color: #001c41;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    display: block;
+  }
+
+    .carousel_alt-button {
+      padding: 10px 5px;
+      font-size: 10px;
+    }
+
+    .carousel_alt-container {
+      gap: 5px;
+    }
+
+    .carousel_alt-card h2 {
+      font-size: 24px;
+    }
+
+    .carousel_alt-card p,
+    .carousel_alt-card li {
+      font-size: 14px;
+    }
+  }
+  /* === RELATOS DE MEMBROS === */
+  
+  /* === NOSSA MISSÃO === */
+    .nossamissao {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #204F0C; /* Verde escuro */
+          color: white;
+          padding: 40px 5%;
+          flex-wrap: wrap;
+          margin-left: 0%;
+                 overflow: hidden;
+
+        }
+  
+        .texto2 {
+          flex: 1;
+          min-width: 300px;
+          max-width: 600px;
+        }
+  
+        .texto2 h1 {
+          color: #f5fcef;
           font-size: 28px;
           font-weight: 800;
           text-transform: uppercase;
-          margin: 10px;
-          font-family: "Anton", sans-serif;;
-    
+          margin: 0px;
+  
         }
-    
-        .nosso_trabalho p{
+  
+        .texto2 p {
+          color: #f5fcef;
           font-size: 15px;
-          font-weight: 600;
-          margin: 10px;
+          font-weight: 200;
           letter-spacing: -1px;
         }
-    
-        .nosso_trabalho li{
-          font-size: 15px;
-          font-weight: 600;
-          margin: 10px;
-          letter-spacing: -1px;
+  
+        .imagem2 {
+          flex: 1;
+          text-align: center;
+          min-width: 100px;
+          max-width: 450px;
         }
-    
-        .scrollbar::-webkit-scrollbar {
-          height: 8px;
+  
+        .imagem2 img {
+          max-width: 100%;
+          height: auto;
         }
-    
-        .scrollbar::-webkit-scrollbar-thumb {
-          background: #ccc;
-          border-radius: 4px;
-        }
-    
-      /* === CARDS === */
-     
-    
-      .card {
-        background-color: #e6e6e6;
-        width: 300px;
-        height: 100%;
-        border-radius: 3px;
-    
-        
-      }
-      .card img{
-        width: 94%;
-        height: 40%;
-        object-fit: cover;
-        border-radius: 3px;
-        margin: 3%;
-      }
-    
-      .card ul {
-        padding-left: 20px;
-      }
-    
-      /* === QUEM SOMOS === */
-        .quem-somos {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            background-color: #204F0C; /* Verde escuro */
-            color: white;
-            padding: 40px 5%;
-            flex-wrap: wrap;
-          }
-    
-          .texto {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px;
-          }
-    
-          .texto h1 {
-            color: #f5fcef;
-            font-size: 35px;
-            font-weight: 800;
-            text-transform: uppercase;
-          }
-    
-          .texto p {
-            color: #f5fcef;
-            font-size: 18px;
-            font-weight: 200;
-            letter-spacing: -1px;
-          }
-    
-          .imagem {
-            flex: 1;
-            min-width: 100px;
-            max-width: 400px;
-          }
-    
-          .imagem img {
-            max-width: 100%;
-            height: auto;
-          }
-    
-          @media (max-width: 600px) {
-          .quem-somos {
+  
+        @media (max-width: 600px) {
+          .nossamissao {
             padding: 40px 20px;
           }
-           
-          
-          .texto h1 {
-            font-size: 28px;
-            font-weight: 800;
-          }
-    
-          .texto p {
-            font-size: 15px;
-          }
-    
-          }
-      /* === QUEM SOMOS === */
-    
-      /* === BLOCO DE IMPACTO === */
-          .impact-section {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr); /* Sempre 2 colunas */
-          gap: 30px;
-          margin: 30px auto;
-          max-width: 1000px;              /* ⬅ define uma largura máxima */
-          padding: 0 20px;    
-        }
-    
-        .impact-card {
-          padding: 20px;
-          border-radius: 8px;
-        }
-    
-        .impact-card strong {
-          color: #ff7c4d;
-          font-size: 55px;
-          display: block;
-          line-height: 1;
-          font-weight: 800;
-          font-family: "Anton", sans-serif;
-          margin-bottom: 30px;
-    
-        }
-        .impact-card .plus {
-          color: #ff7c4d;
-          font-size: 85px;
-          display: block;
-          line-height: 1;
-          font-weight: 800;
-          margin-left: 0px;
-          
-        }
-    
-    
-        .impact-card h3 {
-          color: #011936;
-          margin: 5px 0 0;
-          font-weight: 800;
-          transform: scaleY(1.2);
-        }
-    
-        .impact-card p {
-          color: #275912;
-          font-size: 14px;
-          font-weight: 700;
-          margin: 5px 0 0;
-        }
-    
-        /* Mobile: 1 coluna (1x4) */
-        @media (max-width: 550px) {
-          .impact-section {
-            grid-template-columns: 1fr;
-          }
-        }
-    /* === BLOCO DE IMPACTO === */
-    
-    /* === NOSSA HISTÓRIA === */
-        .banner {
-          position: relative;
-          width: 100%;
-          height: 1200px;
-          background-image: url('media/NOSSA_HISTORIA.jpg'); /* Substitua pela imagem real */
-          background-size: cover;
-          background-position: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-    
-        .card-banner {
-          background-color: rgba(31, 69, 18, 0.9);
-          color: #f5fcef;
-          padding: 40px;
-          width: 70%;
-          max-height: 90%;
-          max-width: 600px;
-          min-width: 250px;
-        }
-    
-        .card-banner h2 {
-          margin-top: 10px;
-          font-size: 60px;
-          font-weight: bold;
-          text-transform: uppercase;
-          margin-bottom: 20px;
-          font-family: "Anton", sans-serif;
-        }
-    
-        .card-banner p {
-          font-size: 20px;
-          line-height: 1.7;
-          margin-bottom: 15px;
-          color: #f5fcef;
-    
-        }
-    
-        @media (max-width: 768px) {
-    
-          .card-banner {
-            padding: 20px;
-            max-width: 90%;
-          }
-    
-          .card-banner h2 {
-            font-size: 34px;
-          }
-    
-          .card-banner p {
-            font-size: 15px;
-          }
-        }
-    /* === NOSSA HISTÓRIA === */
-    
-    /* === RELATOS DE MEMBROS === */
-    .depoimentos {
-      background-color: #f5faef;
-      padding: 60px 30px;
-      font-family: sans-serif;
-      padding-top: 0%;
-
-    }
-    
-    .depoimentos h2 {
-      font-family: "Anton", sans-serif;
-      color: #2e5d1e;
-      font-size: 28px;
-      margin-bottom: 40px;
-      font-weight: 700;
-    }
-    
-    .cards-container2 {
-      display: flex;
-      overflow-x: auto;
-      gap: 20px;
-      padding-bottom: 10px;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      pointer-events: none;        
-      overflow-x: hidden;        
-      touch-action: none; 
-    }
-    
-    .card2 {
-      flex: 0 0 auto;
-      width: 320px;
-      background-color: #001c41;
-      color: white;
-      border-radius: 6px;
-      padding: 20px;
-      box-sizing: border-box;
-      scroll-snap-align: start;
-      display: flex;
-      flex-direction: column;
-      justify-content:end;
-      margin-left:10% ;
-
-    }
-    
-    .card2 p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-      color: #f5fcef;
-    
-    }
-    
-    .card2 img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-      border-radius: 4px;
-      margin-top: auto;
-    
-    }
-    
-    .card2 span {
-      font-size: 14px;
-      color: #f5fcef;
-
-    }
-    
-    .card2 span em {
-      font-style: italic;
-    }
-    
-    .orange {
-      background-color: #ff7c4d;
-    }
-    @media (max-width: 1000px) {
-      .card2 {
-        margin-left:0% ;
-      }
-    }
-    /* Opcional: esconder barra de rolagem no WebKit (Chrome/Safari) */
-    .cards-container::-webkit-scrollbar {
-      display: none;
-    }
-    .cards-container {
-      -ms-overflow-style: none; /* IE e Edge */
-      scrollbar-width: none;    /* Firefox */
-    }
-    /* === RELATOS DE MEMBROS === */
-    
-    /* === NOSSA MISSÃO === */
-      .nossamissao {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #204F0C; /* Verde escuro */
-            color: white;
-            padding: 40px 5%;
-            flex-wrap: wrap;
-          }
-    
-          .texto2 {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px;
-          }
-    
-          .texto2 h1 {
-            color: #f5fcef;
-            font-size: 28px;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin: 0px;
-    
-          }
-    
-          .texto2 p {
-            color: #f5fcef;
-            font-size: 15px;
-            font-weight: 200;
-            letter-spacing: -1px;
-          }
-    
-          .imagem2 {
-            flex: 1;
-            text-align: center;
-            min-width: 100px;
-            max-width: 450px;
-          }
-    
           .imagem2 img {
             max-width: 100%;
-            height: auto;
-          }
-    
-          @media (max-width: 600px) {
-            .nossamissao {
-              padding: 40px 20px;
-            }
-            .imagem2 img {
-              max-width: 100%;
-              max-height: 300px ;
-          }
-            .texto2 h1 {
-            font-size: 28px;
-            font-weight: 800;
-          }
-    
-          .texto2 p {
-            font-size: 14px;
-          }
-    
-          }
-      /* === NOSSA MISSÃO === */
-    
-    /* === CONTATO === */
-      .contact-container {
-        padding: 30px 20px;
-      }
-    
-      .contact-title {
-        color: #154d0d;
-        font-size: 35px;
-        font-weight: 600;
-        text-transform: uppercase;
-        margin-left: 0px;
-        font-family: "Anton", sans-serif;
-      }
-    
-      .contact-info {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 10px 20px;
-      }
-    
-      .contact-item {
-        display: flex;
-        align-items: center;
-      }
-    
-      .contact-item img {
-        width: 20px;
-        margin-right: 5px;
-      }
-    
+            max-height: 300px ;
+        }
+          .texto2 h1 {
+          font-size: 28px;
+          font-weight: 800;
+        }
+  
+        .texto2 p {
+          font-size: 14px;
+        }
+  
+        }
+    /* === NOSSA MISSÃO === */
+  
+  /* === CONTATO === */
+    .contact-container {
+      padding: 30px 20px;
+      overflow: hidden;
+
+    }
+  
+    .contact-title {
+      color: #154d0d;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-left: 0px;
+      font-family: "Anton", sans-serif;
+    }
+  
+    .contact-info {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 10px 20px;
+    }
+  
+    .contact-item {
+      display: flex;
+      align-items: center;
+    }
+  
+    .contact-item img {
+      width: 20px;
+      margin-right: 5px;
+    }
+  
+    .contact-item a {
+      color: #275912;
+      font-size: 26px;
+      text-decoration: none;      }
+    }
+    .contact-item a:hover {
+      color: #275912;
+      text-decoration: underline;
+    }
+  @media (max-width: 600px) {
       .contact-item a {
         color: #275912;
-        font-size: 26px;
-        text-decoration: none;      }
+        font-size: 15px;
       }
-      .contact-item a:hover {
-        color: #275912;
-        text-decoration: underline;
-      }
-    @media (max-width: 600px) {
-        .contact-item a {
-          color: #275912;
-          font-size: 15px;
-        }
-      }
+    }
 
+  
+    /* === RODAPÉ === */
+    .bottom-banner {
+      background-color: #275912;
+      color: #fc895e;
+      text-align: center;
+      padding: 15px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 24PX;
+      font-family: "Anton", sans-serif;
+  
+    }
+  
     
-      /* === RODAPÉ === */
-      .bottom-banner {
-        background-color: #275912;
-        color: #fc895e;
-        text-align: center;
-        padding: 15px;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 24PX;
-        font-family: "Anton", sans-serif;
-    
-      }
-    
-      
